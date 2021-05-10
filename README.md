@@ -5,9 +5,11 @@
 - Node Koa
 - MongoDB
 
-### Rest API
+## Rest API
 
-| 종류                                    | 기능                         |
+### /api/posts/
+
+| 포스트 관련 API                         | 기능                         |
 | :-------------------------------------- | :--------------------------- |
 | `POST /posts`                           | 포스트 작성                  |
 | `GET /posts`                            | 포스트 목록 조회             |
@@ -18,9 +20,18 @@
 | `GET /posts/:id/comments`               | 특정 포스트의 댓글 목록 조회 |
 | `DELETE /posts/:id/comments/:commentID` | 특정 포스트의 특정 댓글 삭제 |
 
-### 스키마
+### /api/auth/
 
-#### Posts
+| 인증 API들            | 기능             |
+| :-------------------- | :--------------- |
+| `POST /auth/register` | 사용자 등록      |
+| `POST /auth/login`    | 로그인           |
+| `GET /auth/check`     | 토큰 검증/재발급 |
+| `POST /auth/logout`   | 로그아웃         |
+
+## 스키마
+
+### posts
 
 | 필드 이름     | 데이터 타입 | 설명      |
 | ------------- | ----------- | --------- |
@@ -28,6 +39,13 @@
 | body          | 문자열      | 내용      |
 | tags          | 문자열 배열 | 태그 목록 |
 | publishedDate | 날짜        | 작성날짜  |
+
+### users
+
+| 필드 이름      | 데이터 타입 | 설명     |
+| -------------- | ----------- | -------- |
+| username       | 문자열      | 유저이름 |
+| hashedPassword | 문자열      | 비밀번호 |
 
 ## tools
 
