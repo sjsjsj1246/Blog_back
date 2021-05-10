@@ -13,7 +13,7 @@ mongoose
   .connect(MONGO_URI, { useNewUrlParser: true, useFindAndModify: false })
   .then(() => {
     console.log('Connected to MongoDB');
-    createFakeData();
+    // createFakeData(); 더미 데이터 생성 코드
   })
   .catch((e) => {
     console.error(e);
