@@ -20,6 +20,8 @@
 
 ### 스키마
 
+#### Posts
+
 | 필드 이름     | 데이터 타입 | 설명      |
 | ------------- | ----------- | --------- |
 | title         | 문자열      | 제목      |
@@ -30,7 +32,7 @@
 ## tools
 
 - nodemon : 코드 변경 시 자동으로 서버 재시작
-  "start:dev": "nodemon --watch src/ src/index.js"
+  - "start:dev": "nodemon --watch src/ src/index.js"
 - koa-router : 라우팅하기
 - koa-bodyparser : 라우트 미들웨어 컨트롤러를 만들기위한 파싱툴
 - dotenv : 환경변수 도구
