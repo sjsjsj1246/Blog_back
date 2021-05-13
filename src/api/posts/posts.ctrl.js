@@ -29,7 +29,7 @@ export const checkOwnPost = (ctx, next) => {
     ctx.status = 403;
     return;
   }
-  return next;
+  return next();
 };
 
 /*
