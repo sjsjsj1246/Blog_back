@@ -58,6 +58,7 @@
 - joi : Request Body 검증 라이브러리
 - bcrypt : 해시를 만들고 검증하는 함수
 - jsonwebtoken : JWT만들기 위한 모듈
+- sanitize-html : HTML을 작성하고 보여주는 서비스에서 유용함, HTML을 필터링해줌
 
 ## 스프린트
 
